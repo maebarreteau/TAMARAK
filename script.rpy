@@ -1,4 +1,3 @@
-﻿# images 
 image salle_dongeon = im.Scale("images/salle_dongeon.png", 1920, 1080)
 image homme_cailloux = im.Scale("images/cailloux.png", 600, 800)
 image livre_sort1 = im.Scale("images/item_5.png", 160, 160)
@@ -7,21 +6,18 @@ image castle = im.Scale("images/castle.png", 1920, 1080)
 image dragon = im.Scale("images/dragon.png", 600, 800)
 image game_over = im.Scale("images/Game_over1.png", 1920, 1080)
 
-
-# characters 
 define u = Character("Une voix rocailleuse")
 define c = Character("Homme cailloux")
 define d = Character("Dragon")
 
-# Définition des positions personnalisées
 transform midleft:
-    xpos 0.3  # 0.0 = complètement à gauche, 0.5 = centre
+    xpos 0.3  
     ypos 0.5
     xanchor 0.5
     yanchor 1.0
 
 transform midright:
-    xpos 0.7  # 1.0 = complètement à droite
+    xpos 0.7  
     ypos 0.5
     xanchor 0.5
     yanchor 1.0
@@ -37,7 +33,7 @@ label game_over:
 
 
 
-# Le jeu commence ici
+
 label start:
 
     scene salle_dongeon
